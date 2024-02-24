@@ -142,7 +142,6 @@ function handleCardClick(card) {
     if (selectedCards.length === 3) {
 
         if (isSet(selectedCards)) {
-            console.log("is SET");
             count++;
         } else {
             alert("Not a set");
@@ -162,13 +161,22 @@ function handleCardClick(card) {
 
 
 function startTiming() {
-    let timerSeconds = 60; // Set the initial timer value in seconds
+    let timerSeconds = 60; 
     let timerDisplay = document.getElementById('timer'); 
     let timerInterval = setInterval(function () {
         if (timerSeconds >= 0) {
+
+           if (count === 3) {
+                clearInterval(timerInterval); 
+                alert(`You have found three set in ${timerSeconds}`); 
+            }
             timerDisplay.textContent = `Seconds left: ${timerSeconds}`; 
             timerSeconds--; 
-        } else {
+        } 
+        
+     
+
+        else {
             clearInterval(timerInterval); 
             alert(`Sets Found: ${count}`); 
         }

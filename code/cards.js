@@ -40,7 +40,7 @@ let cardsBase = [
         number: 1,
         shape: "house",
         filling: "pattern",
-        img: "/images/house-red-pattern.svg",
+        img: "./images/house-red-pattern.svg",
     },
     {
         color: "yellow",
@@ -174,7 +174,7 @@ let cardsBase = [
         number: 1,
         shape: "sun",
         filling: "empty",
-        img: "./images/sun-yellow-pattern.svg",
+        img: "./images/sun-yellow-empty.svg",
     },
     {
         color: "yellow",
