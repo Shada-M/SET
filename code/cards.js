@@ -167,7 +167,7 @@ let cardsBase = [
         number: 1,
         shape: "sun",
         filling: "pattern",
-        img: "../sun-red-pattern.svg",
+        img: "./images/sun-red-pattern.svg",
     },
     {
         color: "yellow",
