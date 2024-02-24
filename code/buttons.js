@@ -19,6 +19,6 @@ newGameButton.addEventListener('click', function () {
     threeCardsDiv.style.display = "none";
     timerDiv.style.display = "block";
     setsDiv.style.display = "block"; 
-
-
+    schuffledArr = generateCardsArray(cardsBase);
+  
 });
